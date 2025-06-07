@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薪水計算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>薪水計算器</h1>
+        <label for="morningShifts">早班次數：</label>
+        <input type="number" id="morningShifts" placeholder="早班次數">
+        
+        <label for="afternoonShifts">午班次數：</label>
+        <input type="number" id="afternoonShifts" placeholder="午班次數">
+        
+        <label for="eveningShifts">晚班次數：</label>
+        <input type="number" id="eveningShifts" placeholder="晚班次數">
+        
+        <label for="overtimeMinutes">加班分鐘數：</label>
+        <input type="number" id="overtimeMinutes" placeholder="加班分鐘數">
+        
+        <button onclick="calculateSalary()">計算薪水</button>
+        
+        <h2 id="result">總薪水: 0 元</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
